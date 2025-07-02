@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container mx-auto lg-24 ">
+        <div class="navbar bg-[#F85559] shadow-sm rounded-full mt-6 mb-6">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a class="hover:text-blue-600 duration-300 " href="#">Home</a></li>
+                        <li><a class="hover:text-blue-600 duration-300 " href="#">Login</a></li>
+                        <li><a class="hover:text-blue-600 duration-300 " href="#">About</a></li>
+                        <li><a class="hover:text-blue-600 duration-300 " href="#">Shop</a></li>
+                        <li><a class="hover:text-blue-600 duration-300 " href="#">Contact</a></li>
+
+                    </ul>
+                </div>
+                <div class="space-x-4 hidden lg:flex text-white ml-4 text-lg font-semibold  ">
+                    <a class="hover:text-blue-600 duration-300 " href="#">Home</a>
+                    <a class="hover:text-blue-600 duration-300 " href="#"> About</a>
+                    <a class="hover:text-blue-600 duration-300 " href="#"> Shop</a>
+                    <a class="hover:text-blue-600 duration-300 " href="#">Contact</a>
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <img src="images/logo.png" alt="">
+                <h6 class="ml-4 text-3xl font-semibold text-white">Fruit Burst</h6>
+            </div>
+            <div class="navbar-end">
+                <div class="bg-white hidden lg:flex justify-between h-6 px-2 py-4 mr-4 items-center rounded-full ">
+                    <input class="border-none" type="text" placeholder="search">
+                    <img src="images/search.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- main seaction -->
+    <div class="container mx-auto lg-24">
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
